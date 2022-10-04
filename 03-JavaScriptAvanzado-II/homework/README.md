@@ -17,6 +17,20 @@ Crear un método `repeatify` que este disponible para _todos_ los objetos `Strin
 
 ```javascript
 console.log('hola'.repeatify(3));   //holaholahola
+
+String.prototype.repeatify = function(number) {
+    let palabra = this
+    let texto = ''
+    if(number<=0){
+      return texto;
+    }
+    for(let i=0;i<number;i++){
+        texto += palabra;
+    }
+    return texto;
+}
+
+console.log('hola'.repeatify(3))
 ```
 
 ### Shapes
