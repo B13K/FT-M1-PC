@@ -25,7 +25,6 @@ function nFibonacci(n) {
   if(n===1) return 1;
   return nFibonacci(n-1)+nFibonacci(n-2)
 
-
 }
 
 /*
@@ -39,23 +38,25 @@ Pueden utilizar class o función constructora.
 
 function Queue() {
   this.arr = []
-  this.cantidad = 0
+  //this.cantidad = 0
 
   this.enqueue = function(item){
     this.arr.push(item)
-    this.cantidad += 1
+    //this.cantidad += 1
   }
 
   this.dequeue = function(){
-    if(this.arr.length<=0) return undefined
-    this.cantidad--
-    let err = this.arr.shift();
-    return err
+    // if(this.arr.length<=0) return undefined
+    // this.cantidad--
+    // let err = this.arr.shift();
+    // return err
+    return this.arr.shift();
 
   }
   
   this.size = function(){
-    return this.cantidad
+    //return this.cantidad
+    return this.arr.length
   }
 }
 
